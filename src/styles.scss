@@ -1,0 +1,95 @@
+$prefix: ".react-tags";
+
+#{$prefix} {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+
+  &-tag {
+    color: #222222;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: nowrap;
+    background: #fafafa;
+    display: inline-block;
+    margin: 4px;
+    padding: 0 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: default;
+    transition: all 0.2s;
+  }
+
+  &-has-color {
+    color: #fff;
+  }
+
+  &-close {
+    font-size: 10px;
+    line-height: 1;
+    margin-left: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &-create {
+    background: #fff;
+    display: flex;
+    align-items: stretch;
+    min-width: 70px;
+    width: auto;
+    margin: 4px;
+    padding: 0;
+    border: 1px dashed #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &-input {
+      color: #222222;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      white-space: nowrap;
+      display: inline-block;
+      min-width: 70px;
+      width: auto;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &-active {
+      border-style: solid;
+    }
+  }
+
+  &-color-picker {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-toggle {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 4px;
+      border: 1px solid #d9d9d9;
+      border-radius: 50%;
+    }
+
+    &-popover {
+      position: absolute;
+      top: 22px;
+    }
+
+    &-cover {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+}
